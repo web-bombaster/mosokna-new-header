@@ -218,7 +218,7 @@ ul:not([class]) li:before {
 /* .header_middle */
 .header_middle {
 	padding-top: 24px;
-	padding-bottom: 21px;
+	padding-bottom: 13px;
 	font-size: 14px;
 
 	@media (max-width: 992px) {
@@ -240,7 +240,7 @@ ul:not([class]) li:before {
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
 	align-items: center;
-	gap: 18px 0;
+	gap: 10px 0;
 }
 
 .header_logo {
@@ -461,7 +461,7 @@ ul:not([class]) li:before {
 		position: absolute;
 		z-index: 1;
 		content: "";
-		top: 43px;
+		top: 51px;
 		left: 50%;
 		transform: translateX(-50%);
 
@@ -474,7 +474,14 @@ ul:not([class]) li:before {
 	}
 }
 
+.main_menu__icon {
+	display: inline-flex;
+	filter: grayscale(100%) brightness(40%);
+}
+
 .main_menu__link {
+	padding-top: 8px;
+	padding-bottom: 8px;
 	position: relative;
 	z-index: 2;
 
@@ -483,6 +490,10 @@ ul:not([class]) li:before {
 	line-height: 18px;
 
 	transition: color 0.25s;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
 
 	.active & {
 		color: var(--color-accent);
@@ -538,6 +549,7 @@ ul:not([class]) li:before {
 .submenu__link {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 12px;
 }
 .submenu__text {
@@ -902,6 +914,8 @@ ul:not([class]) li:before {
 		}
 	}
 
+
+
 	.main_menu__link {
 		padding-top: 4px;
 		padding-bottom: 4px;
@@ -909,7 +923,7 @@ ul:not([class]) li:before {
 		font-weight: 700;
 		line-height: 20px;
 
-		display: block;
+		// display: block;
 	}
 
 	.main_menu__submenu_box {
